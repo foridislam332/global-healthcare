@@ -8,7 +8,7 @@ const SingleDoctor = () => {
     const [singleDoctor, setSingleDoctor] = useState([]);
 
     useEffect(() => {
-        fetch('/homeDoctor.json')
+        fetch('/doctors.json')
             .then(res => res.json())
             .then(data => setDoctors(data))
     }, []);

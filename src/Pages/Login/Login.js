@@ -1,4 +1,3 @@
-import { GoogleAuthProvider } from '@firebase/auth';
 import React from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

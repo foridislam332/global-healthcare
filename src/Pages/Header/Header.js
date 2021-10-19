@@ -18,6 +18,8 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} className="text-light" to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} className="text-light" to="/doctors">All-Doctors</Nav.Link>
+                        <Nav.Link as={Link} className="text-light" to="/about">About Us</Nav.Link>
+                        <Nav.Link as={Link} className="text-light" to="/contact">Contact Us</Nav.Link>
                         <Navbar.Text>
                             <a href="#login" className="text-danger">{user.displayName}</a>
                         </Navbar.Text>

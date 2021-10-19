@@ -3,6 +3,8 @@ import { NotFound } from 'http-errors';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
+import About from './Pages/About/About';
+import Contact from './Pages/Contact/Contact';
 import Doctors from './Pages/Doctors/Doctors';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
@@ -28,6 +30,12 @@ function App() {
                         </Route>
                         <Route exact path="/doctors">
                             <Doctors></Doctors>
+                        </Route>
+                        <Route exact path="/about">
+                            <About></About>
+                        </Route>
+                        <Route exact path="/contact">
+                            <Contact></Contact>
                         </Route>
                         <Route path="/login">
                             <Login></Login>
