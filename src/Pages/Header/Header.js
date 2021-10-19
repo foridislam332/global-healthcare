@@ -1,8 +1,12 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import useAuth from '../../hooks/useAuth';
 
+
+// const loginIcon = <FontAwesomeIcon icon={faCoffee} />
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -26,7 +30,7 @@ const Header = () => {
                         {
                             user.email ?
                                 <button className="btn btn-danger ms-3" onClick={logOut}>Log out</button> :
-                                <Nav.Link as={Link} className="text-light" to="/login">Login</Nav.Link>
+                                <Nav.Link as={Link} className="text-light" to="/login"><i class="fas fa-camera"></i>Login</Nav.Link>
                         }
                     </Navbar.Collapse>
                 </Container>
